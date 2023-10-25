@@ -44,7 +44,7 @@ reviewSchema.pre(/^find/, function (next) {
   // });
 
   this.populate({
-    path: 'user',
+    path: 'ratedBy',
     select: 'name photo _id',
   });
   next();
